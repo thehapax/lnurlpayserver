@@ -7,10 +7,16 @@
 Requirements: 
 on OSX 10.13:
 
+Install Go version 1.13.8
 ```
 $ brew update
 $ brew install golang
 ```
+if you have an earlier version of goland you can change.
+```
+$ brew switch go 1.13.8
+```
+
 
 Edit your ~/.bash_profile accordingly:
 ```
@@ -24,7 +30,7 @@ source your profile:
 $ source ~/.bash_profile
 ```
 
-install other components
+install other go dependencies:
 ```
 $ go get -u github.com/go-bindata/go-bindata
 $ go get -u github.com/aarzilli/golua/lua
