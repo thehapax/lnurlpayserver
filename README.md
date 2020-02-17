@@ -17,7 +17,6 @@ if you have an earlier version of goland you can change.
 $ brew switch go 1.13.8
 ```
 
-
 Edit your ~/.bash_profile accordingly:
 ```
 export GOPATH=$HOME/go-workspace # don't forget to change your path correctly!
@@ -30,7 +29,23 @@ source your profile:
 $ source ~/.bash_profile
 ```
 
-install other go dependencies:
+install all go dependencies and sub dependencies:
+```
+$ go get -u -v -f all
+
+$ npm install 
+$ make
+```
+
+
+## Todo
+...
+
+## Troubleshooting
+...
+
+## known dependencies for this project:
+
 ```
 $ go get -u github.com/go-bindata/go-bindata
 $ go get -u github.com/itchyny/gojq
@@ -50,13 +65,4 @@ $ go get -u github.com/rs/cors
 $ go get -u github.com/rs/zerolog
 $ go get -u github.com/tidwall/gjson
 $ go get -u github.com/tidwall/sjson
-
-
-$ npm install 
-$ make
 ```
-
-
-## Todo
-
-## Troubleshooting
