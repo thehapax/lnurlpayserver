@@ -6,6 +6,11 @@
 
 Requirements: 
 
+$ npm install 
+$ go get -u github.com/go-bindata/go-bindata/...
+$ make
+
+
 
 ## Todo
 
