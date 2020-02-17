@@ -33,7 +33,7 @@ $ source ~/.bash_profile
 install other go dependencies:
 ```
 $ go get -u github.com/go-bindata/go-bindata
-$ go get -u github.com/aarzilli/golua/lua
+$ go get -u github.com/itchyny/gojq
 $ go get -u github.com/fiatjaf/go-lnurl
 $ go get -u github.com/fiatjaf/lightningd-gjson-rpc
 $ go get -u github.com/fiatjaf/ln-decodepay
