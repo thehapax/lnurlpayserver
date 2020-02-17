@@ -28,6 +28,24 @@ install other components
 ```
 $ go get -u github.com/go-bindata/go-bindata
 $ go get -u github.com/aarzilli/golua/lua
+$ go get -u github.com/fiatjaf/go-lnurl
+$ go get -u github.com/fiatjaf/lightningd-gjson-rpc
+$ go get -u github.com/fiatjaf/ln-decodepay
+
+$ go get -u github.com/fiatjaf/lunatico
+$ go get -u github.com/gorilla/mux
+$ go get -u github.com/hoisie/mustache
+$ go get -u github.com/jmoiron/sqlx
+$ go get -u github.com/jmoiron/sqlx/types
+$ go get -u github.com/kelseyhightower/envconfig
+$ go get -u github.com/lib/pq
+$ go get -u github.com/orcaman/concurrent-map
+$ go get -u github.com/rs/cors
+$ go get -u github.com/rs/zerolog
+$ go get -u github.com/tidwall/gjson
+$ go get -u github.com/tidwall/sjson
+
+
 $ npm install 
 $ make
 ```
