@@ -73,6 +73,7 @@ start the server
 
 ## known dependencies for this project:
 
+```
 $ go get -u <<dependencies>>
 
  github.com/go-bindata/go-bindata
@@ -92,3 +93,4 @@ $ go get -u <<dependencies>>
  github.com/rs/zerolog
  github.com/tidwall/gjson
  github.com/tidwall/sjson
+```
