@@ -82,7 +82,7 @@ SSL: If you want to run on localhost with no SSL, you'll need to append to the D
 export DATABASE_URL=postgres://username:password@localhost:5432/lnurlpay?sslmode=disable
 ```
 
-## known dependencies for this project:
+## Known dependencies for this project:
 
 ```
 $ go get -u <<dependencies>>
