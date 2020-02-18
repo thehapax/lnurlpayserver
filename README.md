@@ -64,6 +64,11 @@ start the server
 ./lnurlpayserver 
 ```
 
+or if you have godotenv, 
+```
+godotenv -f .env ./lnurlpayserver 
+```
+
 
 ## Todo
 
