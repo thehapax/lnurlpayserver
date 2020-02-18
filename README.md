@@ -37,7 +37,6 @@ $ npm install
 $ make
 ```
 
-
 ## Todo
 ...
 
@@ -46,23 +45,22 @@ $ make
 
 ## known dependencies for this project:
 
-```
-$ go get -u github.com/go-bindata/go-bindata
-$ go get -u github.com/itchyny/gojq
-$ go get -u github.com/fiatjaf/go-lnurl
-$ go get -u github.com/fiatjaf/lightningd-gjson-rpc
-$ go get -u github.com/fiatjaf/ln-decodepay
+$ go get -u <<dependencies>>
 
-$ go get -u github.com/fiatjaf/lunatico
-$ go get -u github.com/gorilla/mux
-$ go get -u github.com/hoisie/mustache
-$ go get -u github.com/jmoiron/sqlx
-$ go get -u github.com/jmoiron/sqlx/types
-$ go get -u github.com/kelseyhightower/envconfig
-$ go get -u github.com/lib/pq
-$ go get -u github.com/orcaman/concurrent-map
-$ go get -u github.com/rs/cors
-$ go get -u github.com/rs/zerolog
-$ go get -u github.com/tidwall/gjson
-$ go get -u github.com/tidwall/sjson
-```
+ github.com/go-bindata/go-bindata
+ github.com/itchyny/gojq
+ github.com/fiatjaf/go-lnurl
+ github.com/fiatjaf/lightningd-gjson-rpc
+ github.com/fiatjaf/ln-decodepay
+ github.com/fiatjaf/lunatico
+ github.com/gorilla/mux
+ github.com/hoisie/mustache
+ github.com/jmoiron/sqlx
+ github.com/jmoiron/sqlx/types
+ github.com/kelseyhightower/envconfig
+ github.com/lib/pq
+ github.com/orcaman/concurrent-map
+ github.com/rs/cors
+ github.com/rs/zerolog
+ github.com/tidwall/gjson
+ github.com/tidwall/sjson
