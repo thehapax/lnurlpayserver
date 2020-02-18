@@ -65,7 +65,7 @@ start the server
 ```
 
 
-## README Todo
+## Todo
 
 Write instructions on the following:
 - [ ] How to connect to a lightning backend
