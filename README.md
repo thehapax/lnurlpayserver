@@ -11,10 +11,21 @@ Install Go version 1.13.8
 ```
 $ brew update
 $ brew install golang
+$ brew install postgresql
+$ brew services start postgresql
 ```
 if you have an earlier version of goland you can change.
 ```
 $ brew switch go 1.13.8
+```
+
+setup postgres db
+```
+$ psql
+postgres=# createdb `lnurlpaydb`
+postgres=# createuser -s postgres
+
+$ psql postgres -h 127.0.0.1 -d lnurlpaydb -f -a postgres.sql
 ```
 
 Edit your ~/.bash_profile accordingly:
@@ -37,6 +48,22 @@ $ npm install
 $ make
 ```
 
+setup your environment variable in a .env, for example:
+```
+#!/bin/bash
+
+export HOST=localhost
+export PORT=2000
+export SERVICE_URL=https://yourdomain.com
+export DATABASE_URL=postgres://user:password@host:port/lnurlpaydb
+export SECRET=anything_here
+```
+
+start the server 
+```
+./lnurlpayserver 
+```
+
 
 ## Todo
 ...
@@ -45,14 +72,12 @@ $ make
 ...
 
 ## known dependencies for this project:
-
 ```
 $ go get -u github.com/go-bindata/go-bindata
 $ go get -u github.com/itchyny/gojq
 $ go get -u github.com/fiatjaf/go-lnurl
 $ go get -u github.com/fiatjaf/lightningd-gjson-rpc
 $ go get -u github.com/fiatjaf/ln-decodepay
-
 $ go get -u github.com/fiatjaf/lunatico
 $ go get -u github.com/gorilla/mux
 $ go get -u github.com/hoisie/mustache
