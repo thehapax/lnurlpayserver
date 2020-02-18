@@ -65,11 +65,22 @@ start the server
 ```
 
 
-## Todo
-...
+## README Todo
+
+Write instructions on the following:
+- [ ] How to connect to a lightning backend
+- [ ] How to create a template (which is like an item from the shop
+- [ ] How to define infinte advance and complex parameters
+- [ ] How to generate the API
+
 
 ## Troubleshooting
-...
+
+SSL: If you want to run on localhost with no SSL, you'll need to append to the DATABASE_URL to disable ssl, example:
+
+```
+export DATABASE_URL=postgres://username:password@localhost:5432/lnurlpay?sslmode=disable
+```
 
 ## known dependencies for this project:
 
