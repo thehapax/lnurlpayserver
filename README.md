@@ -25,7 +25,7 @@ $ psql
 postgres=# createdb `lnurlpaydb`
 postgres=# createuser -s postgres
 
-$ psql postgres -h 127.0.0.1 -d lnurlpaydb -f -a postgres.sql
+$ psql -U postgres -h 127.0.0.1 -d lnurlpaydb -f postgres.sql
 ```
 
 Edit your ~/.bash_profile accordingly:
