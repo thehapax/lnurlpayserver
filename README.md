@@ -45,7 +45,8 @@ install all go dependencies and sub dependencies:
 $ go get -u -v -f all
 
 $ npm install 
-$ make
+
+$ make lnurlpayserver
 ```
 
 Setup your environment variable in a .env, for example:
@@ -69,23 +70,27 @@ or if you have godotenv,
 godotenv -f .env ./lnurlpayserver 
 ```
 
-
 ## Todo
 
 Write instructions on the following:
-- [ ] How to connect to a lightning backend
+- [ ] How to Setup a Shop to a lightning backend in the Web interface
 - [ ] How to create a template (which is like an item from the shop
 - [ ] How to define infinte advance and complex parameters
+- [ ] How to add items and generate an invoice
 - [ ] How to generate the API
-
 
 ## Troubleshooting
 
-SSL: If you want to run on localhost with no SSL, you'll need to append to the DATABASE_URL to disable ssl, example:
+- SSL: If you want to run on localhost with no SSL, you'll need to append to the DATABASE_URL to disable ssl, example:
 
 ```
-export DATABASE_URL=postgres://username:password@localhost:5432/lnurlpay?sslmode=disable
+ export DATABASE_URL=postgres://username:password@localhost:5432/lnurlpay?sslmode=disable
 ```
+
+- If you get a blank page when go to the web: 
+  - First, check that the public directory is not empty
+  - If is empty, that means preact wasn't built so do `make public` to build it
+
 
 ## Known dependencies for this project:
 
